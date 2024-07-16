@@ -38,8 +38,6 @@
     padding: 10px 25px;
     border: 1px solid red;
     text-transform: uppercase;
-
-
 }
 
 .header .left-side button:hover {
@@ -52,7 +50,6 @@
     -o-transition: all 0.2s;
 }
 
-
 .header .right-side img {
     height: 510px;
 }
@@ -60,35 +57,59 @@
 /* form popup */
 
 .modal-body h3 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif ;
 }
 
-.modal-body form .email-box {
+.modal-body form .input-box {
     position: relative;
-   
 }
 
-.modal-body form .email-box input{
+.modal-body form .input-box input {
     background: none;
     border: none;
     box-shadow: none;
-    border-bottom:1px solid #6F718F99 ;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #6F718F99;
     border-radius: 0%;
     -webkit-border-radius: 0%;
     -moz-border-radius: 0%;
     -ms-border-radius: 0%;
     -o-border-radius: 0%;
 }
+ 
 
-
-.modal-body form .email-box label {
+.modal-body form .input-box label {
     position: absolute;
-    top: 2px;
-    left: 4px;
+    top: 7px;
+    left: 13px; 
     user-select: none;
+    pointer-events: none;
     color: #6F718F99;
+    font-size: 0.9rem; 
+}
+ 
+.modal-body form .form-check input {
+    border: 1px solid #FF3366;
+    box-shadow: none;
+}
+
+.modal-body form .form-check label {
     font-size: 0.9rem;
+}
+
+
+.form-check-input:checked {
+    background: #FF3366;
+}
+
+.modal-body form button {
+    background: #FF3366;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+
 }
 
 
@@ -337,7 +358,7 @@
 
 }
 
-.feedback-section p::before {
+.feedback-section .qutation p::before {
     content: '';
     width: 64px;
     height: 45px;
